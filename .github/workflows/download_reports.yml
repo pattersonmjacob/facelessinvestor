@@ -1,11 +1,15 @@
-# Run the script every day at 00:00 UTC
+name: Download Rivian Reports
+
+# Triggers
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Run every day at 00:00 UTC
+  workflow_dispatch:       # Allows manual triggering with the "Run workflow" button
 
 jobs:
   download:
     runs-on: ubuntu-latest
+
     steps:
       # Step 1: Check out the repository
       - name: Check out the repository
