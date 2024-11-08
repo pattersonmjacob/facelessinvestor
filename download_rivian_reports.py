@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-# URL of Rivian's investor page (example URL)
+# URL of Rivian's investor page (replace with the actual URL if different)
 url = "https://rivian.com/investors"
 
 def download_latest_report():
